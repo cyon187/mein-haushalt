@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- App-Symbol Rosé: Haus mit Gesicht, Herz-Dachfenster und Münzen als Rauch. RX = Eckenradius (build.ps1 setzt ihn) -->
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFD0E4"/><stop offset="1" stop-color="#FF8FC0"/>
+    </linearGradient>
+    <radialGradient id="glow" cx=".5" cy=".58" r=".5">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity=".7"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="roof" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FF7DB5"/><stop offset="1" stop-color="#E91E73"/>
+    </linearGradient>
+    <linearGradient id="wall" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#FCEAF0"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="RX" fill="url(#bg)"/>
+  <circle cx="256" cy="300" r="230" fill="url(#glow)"/>
+
+  <!-- Münzen steigen aus dem Schornstein, dazu kleine Herzen -->
+  <circle cx="404" cy="70" r="20" fill="#FFD27A" stroke="#D9A43A" stroke-width="6"/>
+  <circle cx="372" cy="118" r="27" fill="#FFD27A" stroke="#D9A43A" stroke-width="7"/>
+  <text x="372" y="129" text-anchor="middle" font-family="Segoe UI, Arial" font-size="32" font-weight="900" fill="#8a5a10">€</text>
+  <path d="M84 96 c-10 -14 -30 -6 -24 10 c4 10 24 22 24 22 s20 -12 24 -22 c6 -16 -14 -24 -24 -10z" fill="#FF7DB5"/>
+  <path d="M448 196 c-6 -9 -19 -4 -15 6 c2 6 15 14 15 14 s13 -8 15 -14 c4 -10 -9 -15 -15 -6z" fill="#C9A7F5"/>
+  <rect x="336" y="150" width="54" height="96" rx="10" fill="#C2185B"/>
+
+  <!-- Haus -->
+  <rect x="128" y="236" width="256" height="196" rx="34" fill="url(#wall)"/>
+  <path d="M96 270 L256 128 L416 270" fill="url(#roof)" stroke="url(#roof)" stroke-width="40" stroke-linejoin="round" stroke-linecap="round"/>
+
+  <!-- Dachfenster mit Herz -->
+  <circle cx="256" cy="218" r="34" fill="#FFFFFF"/>
+  <path d="M256 238 c-16 -11 -26 -19 -26 -29 c0 -9 7 -15 15 -15 c5 0 9 3 11 7 c2 -4 6 -7 11 -7 c8 0 15 6 15 15 c0 10 -10 18 -26 29z" fill="#F2307F"/>
+
+  <!-- Gesicht mit Wimpern -->
+  <ellipse cx="212" cy="318" rx="15" ry="19" fill="#3D2230"/>
+  <ellipse cx="300" cy="318" rx="15" ry="19" fill="#3D2230"/>
+  <circle cx="217" cy="311" r="5" fill="#fff"/><circle cx="305" cy="311" r="5" fill="#fff"/>
+  <path d="M198 302 l-9 -8 M206 297 l-4 -10 M314 302 l9 -8 M306 297 l4 -10" stroke="#3D2230" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="178" cy="356" r="17" fill="#FF6B8A" opacity=".55"/><circle cx="334" cy="356" r="17" fill="#FF6B8A" opacity=".55"/>
+  <path d="M218 360 Q256 400 294 360" stroke="#3D2230" stroke-width="13" fill="none" stroke-linecap="round"/>
+</svg>

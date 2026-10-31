@@ -1,0 +1,2 @@
+# Kalenderdateien brauchen CRLF-Zeilenenden: nicht umwandeln
+*.ics -text

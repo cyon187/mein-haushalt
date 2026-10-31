@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Strom App//DE
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Strom ⚡
+BEGIN:VEVENT
+UID:strom-zaehler-monatlich@strom-app
+DTSTAMP:20261030T000000Z
+DTSTART;VALUE=DATE:20261101
+DTEND;VALUE=DATE:20261102
+RRULE:FREQ=MONTHLY;BYMONTHDAY=1
+SUMMARY:⚡ Volti wartet: Zähler ablesen!
+DESCRIPTION:Neuer Monat\, neues Glück! 💡 Dreh die Rädchen in der Strom
+ -App und halte deine 🔥-Serie am Leben.
+COLOR:limegreen
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⚡ Hey\, Volti hier! Zeit zum Zählerablesen 💡
+TRIGGER:PT9H
+END:VALARM
+END:VEVENT
+END:VCALENDAR
